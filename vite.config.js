@@ -5,7 +5,7 @@ import path from "path";
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: "/Americano",
+  base: "/Americano/",
   build: {
     rollupOptions: {
       output: {
@@ -15,6 +15,7 @@ export default defineConfig({
       },
     },
   },
+  assetsInclude: ["**/*.ttf"],
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"), // 꼭 존재해야 함
