@@ -112,7 +112,7 @@ const DietRadar = () => {
   const getDietByCode = (code) => DietTestList.find((d) => d.code === code);
 
   return (
-    <div className="DietTest common">
+    <div className="DietRadar common">
       <div className="title">
         <h3>어떤 식단이 내 몸에 더 잘 맞을까?</h3>
         <p>두 식단을 골라 비교해보세요.</p>
@@ -156,7 +156,7 @@ const DietRadar = () => {
           {label !== "이미지" && label !== "타이틀" && (
             <h4 className="con-title">{label}</h4>
           )}
-          <div className="colums">
+          <div className={`${label !== "이미지" && "bg"} colums`}>
             <div className="w-50">
               {renderDietInfo(getDietByCode(selectedOption1?.code), key)}
             </div>
