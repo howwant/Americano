@@ -3,8 +3,8 @@ import { TabView, TabPanel } from "primereact/tabview";
 import { Divider } from "primereact/divider";
 import Grade_a_img from "@/assets/img/LowCarb/grade_a.png";
 import Grade_b_img from "@/assets/img/LowCarb/grade_b.png";
-import DASH_01 from "@/assets/img/DASH_01.png";
-import MedDiet_01 from "@/assets/img/MedDiet_01.png";
+import DASH_01 from "@/assets/img/dietPlan/DASH_01.png";
+import MedDiet_01 from "@/assets/img/dietPlan/MedDiet_01.png";
 
 const HealthFirst = () => {
   return (
@@ -167,11 +167,10 @@ const HealthFirst = () => {
             <h4>🚨 부작용은 없을까요?</h4>
             <p>전반적으로 매우 안전한 식단이에요.</p>
             <p>다만 최근 연구에서는 몇 가지 한계도 지적돼요:</p>
-            <p>- 식이 콜레스테롤 제한(달걀, 해산물 등)에 대한 재검토 필요</p>
-            <p>- 탄수화물 비중이 높아 혈당·지질 이상 위험 존재</p>
+            <p>식이 콜레스테롤 제한(달걀, 해산물 등)에 대한 재검토 필요</p>
+            <p>탄수화물 비중이 높아 혈당·지질 이상 위험 존재</p>
             <p>
-              - 일부 권장 칼로리(여성 1200kcal, 남성 1600kcal)는 부족할 수
-              있어요
+              일부 권장 칼로리(여성 1200kcal, 남성 1600kcal)는 부족할 수 있어요
             </p>
           </div>
 
@@ -266,7 +265,10 @@ const HealthFirst = () => {
               만성질환 위험 감소는 다수 연구로 입증됐어요.
             </p>
             <p>
-              <small>(Smith E. et al., 2024)</small>
+              <small>
+                (Impact of a short-term Mediterranean diet intervention on
+                plasma metabolites: a pilot study, Smith E at al, 2024)
+              </small>
             </p>
           </div>
           <Divider></Divider>

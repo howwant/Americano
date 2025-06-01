@@ -1,47 +1,17 @@
-import banner1 from "@/assets/img/banner1.jpeg";
-import banner2 from "@/assets/img/banner2.jpeg";
-import s_banner1 from "@/assets/img/small_banner/small_banner_01.PNG";
-import s_banner2 from "@/assets/img/small_banner/small_banner_02.PNG";
-import s_banner3 from "@/assets/img/small_banner/small_banner_03.PNG";
-import s_banner4 from "@/assets/img/small_banner/small_banner_04.PNG";
-import s_banner5 from "@/assets/img/small_banner/small_banner_05.PNG";
-import s_banner6 from "@/assets/img/small_banner/small_banner_06.PNG";
-import s_banner7 from "@/assets/img/small_banner/small_banner_07.PNG";
-import s_banner8 from "@/assets/img/small_banner/small_banner_08.PNG";
-import s_banner9 from "@/assets/img/small_banner/small_banner_09.PNG";
-import s_banner10 from "@/assets/img/small_banner/small_banner_10.PNG";
-import s_banner11 from "@/assets/img/small_banner/small_banner_11.PNG";
-import s_banner12 from "@/assets/img/small_banner/small_banner_12.PNG";
-import s_banner13 from "@/assets/img/small_banner/small_banner_13.PNG";
-import s_banner14 from "@/assets/img/small_banner/small_banner_14.PNG";
-import s_banner15 from "@/assets/img/small_banner/small_banner_15.PNG";
-import s_banner16 from "@/assets/img/small_banner/small_banner_16.PNG";
+import { mainBanners, s_img } from "@/assets/img/bannerData";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Navigation, Pagination } from "swiper/modules";
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
+
 const Home = () => {
+  const navigate = useNavigate();
   const [isFullScreen, setIsFullScreen] = useState(false);
   const [startIndex, setStartIndex] = useState(0); // 클릭된 이미지 index
 
-  const s_img = [
-    { src: s_banner1 },
-    { src: s_banner2 },
-    { src: s_banner3 },
-    { src: s_banner4 },
-    { src: s_banner5 },
-    { src: s_banner6 },
-    { src: s_banner7 },
-    { src: s_banner8 },
-    { src: s_banner9 },
-    { src: s_banner10 },
-    { src: s_banner11 },
-    { src: s_banner12 },
-    { src: s_banner13 },
-    { src: s_banner14 },
-    { src: s_banner15 },
-    { src: s_banner16 },
-  ];
+  // 클릭된 startIndex에 따라 pop 배열을 가져옴
+  const currentPopList = s_img[startIndex]?.pop || [];
 
   return (
     <div className="Home">
@@ -54,13 +24,18 @@ const Home = () => {
         modules={[Autoplay]}
       >
         <SwiperSlide>
-          <img src={banner1} />
+          <img src={mainBanners[0]} alt="메인 배너1" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src={banner2} />
+          <img
+            src={mainBanners[1]}
+            alt="메인 배너2"
+            onClick={() => navigate("/dietTest")}
+            style={{ cursor: "pointer" }}
+          />
         </SwiperSlide>
       </Swiper>
-
+      <h3 className="sub-title">17가지 식단, 한눈에 보기</h3>
       {/* 작은 배너 슬라이드 */}
       <Swiper
         className="Swiper2"
@@ -73,17 +48,19 @@ const Home = () => {
           <SwiperSlide key={idx}>
             <img
               src={item.src}
+              alt={`작은 배너 ${idx + 1}`}
               onClick={() => {
                 setStartIndex(idx);
                 setIsFullScreen(true);
               }}
+              style={{ cursor: "pointer" }}
             />
           </SwiperSlide>
         ))}
       </Swiper>
 
-      {/* 전체화면 Swiper */}
-      {isFullScreen && (
+      {/* 전체화면 Swiper: 클릭된 작은 배너의 pop 리스트를 보여줌 */}
+      {isFullScreen && currentPopList.length > 0 && (
         <div
           style={{
             position: "fixed",
@@ -113,13 +90,13 @@ const Home = () => {
               cursor: "pointer",
               zIndex: 10000,
             }}
+            aria-label="닫기"
           >
             ✕
           </button>
 
-          {/* 전체화면용 Swiper */}
+          {/* 전체화면용 Swiper: currentPopList 배열을 순회 */}
           <Swiper
-            initialSlide={startIndex}
             slidesPerView={1}
             navigation
             pagination={{ clickable: true }}
@@ -127,10 +104,11 @@ const Home = () => {
             style={{ width: "90%", height: "90%" }}
             className="Swiper3"
           >
-            {s_img.map((item, idx) => (
-              <SwiperSlide key={idx}>
+            {currentPopList.map((popImgSrc, popIdx) => (
+              <SwiperSlide key={popIdx}>
                 <img
-                  src={item.src}
+                  src={popImgSrc}
+                  alt={`팝업 이미지 ${popIdx + 1}`}
                   style={{
                     width: "100%",
                     height: "100%",

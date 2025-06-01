@@ -6,6 +6,8 @@ import Grade_a_img from "@/assets/img/LowCarb/grade_a.png";
 import Grade_c_img from "@/assets/img/LowCarb/grade_c.png";
 import Grade_d_img from "@/assets/img/LowCarb/grade_d.png";
 import Grade_f_img from "@/assets/img/LowCarb/grade_f.png";
+import TimeEating01 from "@/assets/img/dietPlan/TimeEating01.png";
+import TimeEating02 from "@/assets/img/dietPlan/TimeEating02.jpeg";
 
 const TimeEating = () => {
   return (
@@ -50,6 +52,7 @@ const TimeEating = () => {
               해도 되는 점도 매력적.
             </p>
           </div>
+          <img src={TimeEating01} alt="TimeEating01" />
 
           <Divider></Divider>
 
@@ -165,6 +168,13 @@ const TimeEating = () => {
             <p>하지만 공복감, 피로, 집중력 저하가 생길 수 있어요</p>
             <p>장기적 시행시 영양결핍 우려</p>
             <p>→ 다중영양소 보충제 섭취 또는 고품질 탄수화물 식품 포함 필요</p>
+            <p>
+              <small>
+                (Randomized controlled trial for time-restricted eating in
+                healthy volunteers without obesity. Xie, Z. Sun, Y. Ye Y. et al.
+                2022)
+              </small>
+            </p>
           </div>
 
           <Divider></Divider>
@@ -181,6 +191,7 @@ const TimeEating = () => {
               </small>
             </p>
           </div>
+          <img src={TimeEating02} alt="TimeEating02" />
 
           <b className="last-info">
             매일 굶지 않아도, 일주일 2일만 전략적으로!
@@ -307,7 +318,6 @@ const TimeEating = () => {
               </small>
             </p>
           </div>
-
           <Divider></Divider>
 
           <div className="body-con">

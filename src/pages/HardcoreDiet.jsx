@@ -3,8 +3,9 @@ import { TabView, TabPanel } from "primereact/tabview";
 import { Divider } from "primereact/divider";
 import Grade_c_img from "@/assets/img/LowCarb/grade_c.png";
 import Grade_f_img from "@/assets/img/LowCarb/grade_f.png";
-import GM_01 from "@/assets/img/GM_01.png";
-import SwitchOn_01 from "@/assets/img/SwitchOn_01.png";
+import GM_01 from "@/assets/img/dietPlan/GM_01.png";
+import SwitchOn_01 from "@/assets/img/dietPlan/SwitchOn_01.png";
+import SwitchOn_02 from "@/assets/img/dietPlan/SwitchOn_02.png";
 
 const HealthFirst = () => {
   return (
@@ -41,7 +42,11 @@ const HealthFirst = () => {
             <p>
               예: 고구마는 GI(혈당지수)가 낮고 포만감이 높아 자주 사용됨
               <br />
-              <small>(Shih et al., 2019)</small>
+              <small>
+                (White Sweet Potato as Meal Replacement for Overweight
+                White-Collar Workers: A Randomized Controlled Trial.Shih,
+                Chun-Kuang et al.2019)
+              </small>
             </p>
           </div>
 
@@ -58,7 +63,10 @@ const HealthFirst = () => {
             <p>예: 고구마는 비타민 A, C는 풍부하지만 철, 칼슘, B12 부족</p>
             <p>양배추는 항산화 성분은 풍부하지만 단백질과 철분은 부족</p>
             <p>
-              <small>(Ajmera, R. 2020. Mono Diet Review, Nutrition)</small>
+              <small>
+                (Mono Diet Review: Purpose, Benefits, and Side Effects.Rachael
+                Ajmera. Nutrition. 2020 )
+              </small>
             </p>
           </div>
           <Divider></Divider>
@@ -106,7 +114,10 @@ const HealthFirst = () => {
             </p>
             <p>하지만 전체적으로 보면 효과는 단기적이고, 제한적이에요.</p>
             <p>
-              <small>(Rasdi et al., 2018)</small>
+              <small>
+                (Effect of mono and binary diets on growth and reproduction of
+                cyclopoid copepod. Rasdi, Nadiah et al. 2018)
+              </small>
             </p>
           </div>
 
@@ -151,7 +162,10 @@ const HealthFirst = () => {
             <p>
               일주일 만에 체중 4~5kg, 간 지방까지 줄었다는 연구도 있어요.
               <br />
-              <small>(Gupta et al., 2023)</small>
+              <small>
+                (Gupta, A. et al. 2023. General-motors diet: A quick fix for
+                steatotic live liver donors.)
+              </small>
             </p>
             <p>탄수화물 고갈과 수분 손실 → 지방 연소 구조로 설계돼 있어요.</p>
             <p>글리코겐 고갈 → 지방산 산화 증가 → 간 내 지방 제거</p>
@@ -199,7 +213,10 @@ const HealthFirst = () => {
             <p>장기 지속 시 근손실, 기초대사량 저하, 요요현상 가능성이 커요.</p>
             <p>저혈당, 허기, 탈수, 변비 등을 경험한 사례도 보고돼 있어요.</p>
             <p>
-              <small>(Marengo, K., 2019. Nutrition)</small>
+              <small>
+                (Can you lose weight with the 7-day GM diet?. Medically reviewed
+                by Katherine Marengo LDN, R.D. Nutrition. 2019)
+              </small>
             </p>
           </div>
 
@@ -291,6 +308,7 @@ const HealthFirst = () => {
             </p>
             <p>당뇨병 위험 감소 가능성도 함께 기대할 수 있어요.</p>
           </div>
+          <img src={SwitchOn_02} alt="SwitchOn_02" />
 
           <b className="last-info">
             굶지 말고, 단계적으로 식습관을 바꿔보세요.

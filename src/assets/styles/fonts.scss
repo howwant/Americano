@@ -1,22 +1,54 @@
 @font-face {
   font-family: "SeoulAlrim";
-  src: url("/assets/styles/fonts/SeoulAlrimTTF-Bold/SeoulAlrimTTF-Medium.ttf");
+  src: url("../fonts/SeoulAlrimTTF-Bold/SeoulAlrimTTF-Medium.ttf");
   font-weight: 500;
 }
 @font-face {
   font-family: "SeoulAlrim";
-  src: url("/assets/styles/fonts/SeoulAlrimTTF-Bold/SSeoulAlrimTTF-Bold.ttf");
+  src: url("../fonts/SeoulAlrimTTF-Bold/SSeoulAlrimTTF-Bold.ttf");
   font-weight: 600;
 }
 @font-face {
   font-family: "SeoulAlrim";
-  src: url("/assets/styles/fonts/SeoulAlrimTTF-Bold/SeoulAlrimTTF-ExtraBold.ttf");
+  src: url("../fonts/SeoulAlrimTTF-Bold/SeoulAlrimTTF-ExtraBold.ttf");
   font-weight: 700;
 }
 @font-face {
   font-family: "SeoulAlrim";
-  src: url("/assets/styles/fonts/SeoulAlrimTTF-Bold/SeoulAlrimTTF-Heavy.ttf");
+  src: url("../fonts/SeoulAlrimTTF-Bold/SeoulAlrimTTF-Heavy.ttf");
   font-weight: 800;
+}
+
+@font-face {
+  font-family: "210 싸나이B";
+  src: url("../fonts/210_싸나이/210 싸나이B.ttf");
+  font-weight: 600;
+}
+@font-face {
+  font-family: "210 싸나이B";
+  src: url("../fonts/210_싸나이/210 싸나이L.ttf");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "210 싸나이B";
+  src: url("../fonts/210_싸나이/210 싸나이R.ttf");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "GmarketSans";
+  src: url("../fonts/GmarketSansTTF/GmarketSansTTFBold.ttf");
+  font-weight: 600;
+}
+@font-face {
+  font-family: "GmarketSans";
+  src: url("../fonts/GmarketSansTTF/GmarketSansTTFMedium.ttf");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "GmarketSans";
+  src: url("../fonts/GmarketSansTTF/GmarketSansTTFLight");
+  font-weight: 400;
 }
 body {
   font-family: "SeoulAlrim", sans-serif;

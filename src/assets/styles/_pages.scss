@@ -1,9 +1,11 @@
 .common {
+  padding: 20px;
   .body-img {
     width: 100%;
     padding: 10px;
   }
   .title {
+    margin: 15px 0;
     text-align: center;
     h3 {
       font-size: 1.4rem;
@@ -64,6 +66,14 @@
     line-height: 1.2;
   }
 }
+.Home .sub-title {
+  font-size: 18px;
+  border-left: 3px solid #1abc9c;
+  padding-left: 5px;
+  margin: 20px 10px 10px;
+  // font-family: "210 싸나이B";
+}
+
 .DietRadar {
   line-height: 1.2;
   .w-50 {
@@ -82,6 +92,13 @@
     }
     &.bg > div:nth-child(2) {
       background-color: #f0f9ff;
+    }
+    ul,
+    .main {
+      padding: 10px 5px;
+    }
+    li + li {
+      margin-top: 8px;
     }
   }
   .con-title {
@@ -103,5 +120,104 @@
     margin-top: 10px;
     font-size: 14px;
     color: #666;
+  }
+}
+.DietTest {
+  background: #ffe8db;
+  min-height: calc(100vh - 150px);
+}
+.DietGrade {
+  background: #fdf8e3;
+}
+.WhyWeMadeIt {
+  display: flex;
+  flex-direction: column;
+}
+.Persona {
+  .p-tabview-nav-content {
+    margin-right: 50px;
+  }
+}
+.DietTest.Test {
+  padding: 20px;
+  .bg-red {
+    border: 2px solid #222;
+    border-radius: 10px;
+    background-color: #fc5145;
+    padding: 20px;
+    // background-image: url("../img/TestQuestion/background.png");
+    // background-size: cover;
+  }
+  .bg-brown {
+    border: 2px solid #222;
+    border-radius: 10px;
+    padding-top: 30px;
+    background-color: #291902;
+  }
+  .title-sec {
+    text-align: center;
+    p {
+      color: #ffe600;
+      font-family: "GmarketSansTTF";
+      padding-bottom: 10px;
+    }
+    h3 {
+      color: #fff;
+      font-family: "210 싸나이B";
+      font-size: 30px;
+    }
+  }
+  .con {
+    margin: 15px 5px;
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+    img {
+      width: 100%;
+    }
+  }
+  .btns {
+    background: #999;
+    padding: 10px;
+    border-radius: 0 0 10px 10px;
+    display: flex;
+    justify-content: space-around;
+    button {
+      font-family: "210 싸나이B";
+      font-size: 24px;
+      color: #fff;
+      border-radius: 20px;
+      background-color: #291902;
+      border: 2px solid #111;
+      min-width: 100px;
+    }
+  }
+  .footer {
+    color: #ffe600;
+    font-family: "210 싸나이B";
+    font-size: 20px;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 0;
+    span {
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      border: 5px solid #ffe600;
+    }
+  }
+}
+.DietTestResult {
+  .btns {
+    margin-top: -3px;
+    background-color: #eee;
+    padding: 10px;
+    justify-content: space-around;
+    display: flex;
+    gap: 10px;
+    button {
+      display: flex;
+      gap: 5px;
+    }
   }
 }

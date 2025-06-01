@@ -99,10 +99,10 @@ const DietRadar = () => {
       return <img src={getImageSrc(image)} alt={name} />;
     } else if (key === "name") {
       return (
-        <>
+        <div className="main">
           <p className="title">{name}</p>
           <p className="title-sub">{subTitle}</p>
-        </>
+        </div>
       );
     } else {
       return <ul>{renderList(textMap[key])}</ul>;

@@ -46,7 +46,7 @@ export default function LandingPage() {
         style={{
           width: shrinkLogo ? "150px" : "200px",
           position: "absolute",
-          top: shrinkLogo ? "10px" : "50%",
+          top: shrinkLogo ? "10px" : "40%",
           left: shrinkLogo ? "10px" : "50%",
           transform: shrinkLogo ? "translate(0, 0)" : "translate(-50%, -50%)",
           transition: "all 1s ease",

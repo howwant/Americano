@@ -296,8 +296,10 @@ const LowCarb = () => {
             <p>장내 미생물 조성 개선, 항염·항산화 유전자 발현 조절</p>
             <p>일부 암세포(포도당 의존형)의 성장 억제 가능성도 보고됨</p>
             <p>
-              (Dowis, Kathryn, and Simran Banga. The Potential Health Benefits
-              of the Ketogenic Diet: A Narrative Review)
+              <small>
+                (Dowis, Kathryn, and Simran Banga. The Potential Health Benefits
+                of the Ketogenic Diet: A Narrative Review)
+              </small>
             </p>
             <p>
               → 단, 장기적 안정성은 아직 논란 중으로, 반드시 전문가 상담 후

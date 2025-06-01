@@ -370,3 +370,190 @@ export const DietTestList = [
     calorieLimit: "- 음료 자체는 저열량, 식사 대체 시 영양불량 위험 ",
   },
 ];
+
+export const dietQuestions = [
+  {
+    type: ["S", "C"],
+    title: "회사나 학교 점심시간",
+    question: "메뉴 정할 때 당신은?",
+    options: [
+      {
+        text: "혼자 편하게 먹고 싶은거 먹는게 최고",
+        value: "S",
+        img: "SC01A",
+      },
+      {
+        text: "뭐든 같이 먹으면 맛있잖아! 같이 먹을 사람부터 찾음",
+        value: "C",
+        img: "SC01B",
+      },
+    ],
+  },
+  {
+    type: ["S", "C"],
+    title: "주말 아침",
+    question: " 배달음식 먹을 땐?",
+    options: [
+      {
+        text: "내가 좋아하는 걸 골라서 혼자 느긋하게 먹기",
+        value: "S",
+        img: "SC02A",
+      },
+      {
+        text: "뭐 시킬지 같이 고민하고 나눠먹는 재미가 있어야지",
+        value: "C",
+        img: "SC02B",
+      },
+    ],
+  },
+  {
+    type: ["S", "C"],
+    title: "새로운 사람을 만났다!",
+    question: "처음 친해질 땐?",
+    options: [
+      {
+        text: "같이 밥 먹으면 금방 가까워져요",
+        value: "C",
+        img: "SC03A",
+      },
+      {
+        text: "밥은 혼자 먹고, 친해지는 건 천천히 해요",
+        value: "S",
+        img: "SC03B",
+      },
+    ],
+  },
+  {
+    type: ["U", "P"],
+    title: "주말 외출하기 전",
+    question: "식사 계획은?",
+    options: [
+      {
+        text: "집 나서기 전에 뭐 먹을지부터 정해둬야 마음이 편해요",
+        value: "U",
+        img: "UP01A",
+      },
+      {
+        text: "특정 목표(다이어트, 벌크업 등)에 맞춘다",
+        value: "P",
+        img: "UP01B",
+      },
+    ],
+  },
+  {
+    type: ["U", "P"],
+    title: "냉장고가 텅 비어있을 때",
+    question: "마트에 가면?",
+    options: [
+      { text: "계획 없던 간식이 한가득", value: "U", img: "UP02A" },
+      { text: "장바구니엔 계획된 재료만 쏙쏙", value: "P", img: "UP02B" },
+    ],
+  },
+  {
+    type: ["U", "P"],
+    title: "식사시간, 친구의 추천을 받았다!",
+    question: "“이거 먹자!” 했을 때",
+    options: [
+      {
+        text: "이미 먹을 거 정해놔서 당황... 미안하지만 거절해요",
+        value: "U",
+        img: "UP03A",
+      },
+      { text: "오 괜찮은데? 그거 먹자!", value: "P", img: "UP03B" },
+    ],
+  },
+  {
+    type: ["R", "I"],
+    title: "아침 식사에 대해",
+    question: "어떻게 생각하세요?",
+    options: [
+      {
+        text: "배 안 고프면 굳이 먹지 않아요",
+        value: "R",
+        img: "RI01A",
+      },
+      { text: "하루의 시작은 아침밥이죠!", value: "I", img: "RI01B" },
+    ],
+  },
+  {
+    type: ["R", "I"],
+    title: "하루 일정을 다 끝낸 밤 10시",
+    question: "갑자기 배고프면?",
+    options: [
+      {
+        text: "고민 NO, 먹고 잔다",
+        value: "R",
+        img: "RI02A",
+      },
+      { text: "물 마시고 참는다", value: "I", img: "RI02B" },
+    ],
+  },
+  {
+    type: ["R", "I"],
+    title: "하루 세 끼에 대한",
+    question: "당신의 생각은?",
+    options: [
+      {
+        text: "리듬을 위해 규칙적인 세 끼는 필수죠",
+        value: "R",
+        img: "RI03A",
+      },
+      {
+        text: "하루 두 끼나 간식으로도 충분할 때가 많아요",
+        value: "I",
+        img: "RI03B",
+      },
+    ],
+  },
+  {
+    type: ["T", "S2"],
+    title: "SNS에서 HOT한",
+    question: "다이어트가 보이면?",
+    options: [
+      {
+        text: "효과 좋다니까 나도 해봐야지!",
+        value: "T",
+        img: "TS01A",
+      },
+      {
+        text: "나한테 맞는지는 일단 분석해봐야죠",
+        value: "S2",
+        img: "TS01B",
+      },
+    ],
+  },
+  {
+    type: ["T", "S2"],
+    title: "내 다이어트의",
+    question: "성공 기준은?",
+    options: [
+      {
+        text: "한 달 안에 눈에 보이게 빠지는 거",
+        value: "T",
+        img: "TS02A",
+      },
+      {
+        text: "3개월 이상 유지되는 변화",
+        value: "S2",
+        img: "TS02B",
+      },
+    ],
+  },
+  {
+    type: ["T", "S2"],
+    title: "유행하는 최신 다이어트를",
+    question: "따라해본 경험?",
+    options: [
+      {
+        text: "레몬디톡스, 원푸드, 키토… 유행한 건 다 해봤어요!",
+        value: "T",
+        img: "TS03A",
+      },
+      {
+        text: "몇 가지 시도해보고 나한테 맞는 방식만 꾸준히 해요",
+        value: "S2",
+        img: "TS03B",
+      },
+    ],
+  },
+];

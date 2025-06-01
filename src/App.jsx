@@ -16,6 +16,8 @@ import DietGrade from "./pages/DietGrade";
 import WhyWeMadeIt from "./pages/WhyWeMadeIt";
 import { useEffect, useState } from "react";
 import LandingPage from "./pages/LandingPage";
+import DietTestTest from "./pages/DietTestTest";
+import DietTestResult from "./pages/DietTestResult";
 
 function App() {
   const [showLanding, setShowLanding] = useState(true);
@@ -44,6 +46,8 @@ function App() {
               <Route path="dietPlan/others" element={<Others />} />
 
               <Route path="dietTest" element={<DietTest />} />
+              <Route path="dietTest-test" element={<DietTestTest />} />
+              <Route path="dietTest-result/:id" element={<DietTestResult />} />
               <Route path="dietRadar" element={<DietRadar />} />
               <Route path="persona" element={<Persona />} />
               <Route path="about/dietGrade" element={<DietGrade />} />

@@ -122,7 +122,12 @@ const Others = () => {
               임상연구에 따르면, 체중·BMI·체지방률·혈당·지질 수치 개선이
               확인됐어요.
               <br />
-              <small>(Rony Abou-Khalil et al., 2021)</small>
+              <small>
+                (Apple cider vinegar for weight management in Lebanese
+                adolescents and young adults with overweight and obesity: a
+                randomised, double-blind, placebo-controlled study, Rony
+                Abou-Khalil at al)
+              </small>
             </p>
             <p>
               전분 소화 효소 억제, 위 배출 지연으로 포만감 지속 효과도 있어요.
@@ -218,6 +223,12 @@ const Others = () => {
             </p>
             <p>1L 이상 장기 섭취 시 간·신장 손상 사례가 보고됐어요.</p>
             <p>임산부, 간 질환자, 신장 환자에게는 섭취 금지 권장돼요.</p>
+            <p>
+              <small>
+                (A review on health benefits of kombucha nutritional compounds
+                and metabolites, Martínez Leal, J at al, 2017)
+              </small>
+            </p>
           </div>
 
           <Divider></Divider>

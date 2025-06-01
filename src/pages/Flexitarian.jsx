@@ -2,7 +2,7 @@ import React from "react";
 import { TabView, TabPanel } from "primereact/tabview";
 import { Divider } from "primereact/divider";
 import Grade_b_img from "@/assets/img/LowCarb/grade_b.png";
-import Flexi_01 from "@/assets/img/Flexi_01.png";
+import Flexi_01 from "@/assets/img/dietPlan/Flexi_01.png";
 
 const Flexitarian = () => {
   return (
@@ -47,7 +47,10 @@ const Flexitarian = () => {
             있어요.
           </p>
           <p>
-            <small>(Derbyshire, E.J. Flexitarian Diets and Health)</small>
+            <small>
+              (Flexitarian Diets and Health: A Review of the Evidence-Based
+              Literature, Emma J Derbyshire)
+            </small>
           </p>
         </div>
 
