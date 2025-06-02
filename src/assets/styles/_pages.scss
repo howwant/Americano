@@ -134,8 +134,11 @@
   flex-direction: column;
 }
 .Persona {
-  .p-tabview-nav-content {
-    margin-right: 50px;
+  // .p-tabview-nav-content {
+  //   margin-right: 50px;
+  // }
+  .tabs {
+    padding: 0 10px;
   }
 }
 .DietTest.Test {

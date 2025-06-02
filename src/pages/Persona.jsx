@@ -50,13 +50,15 @@ const Persona = () => {
     },
   ];
   return (
-    <div className="Persona common">
-      <div className="title">
-        <h3>이런 사람, 이런 다이어트</h3>
-        <p>누구에게, 어떤 이유로, 어떤 식단을 추천하는지</p>
-        <p>상황별 최적의 식단을 찾아보세요.</p>
+    <div className="Persona">
+      <div className="common">
+        <div className="title">
+          <h3>이런 사람, 이런 다이어트</h3>
+          <p>누구에게, 어떤 이유로, 어떤 식단을 추천하는지</p>
+          <p>상황별 최적의 식단을 찾아보세요.</p>
+        </div>
       </div>
-      <TabView scrollable>
+      <TabView scrollable className="tabs">
         {PersonaImgs.map((img, idx) => (
           <TabPanel header={img.name} key={idx}>
             <img src={img.url} alt={`${img.name}`} />

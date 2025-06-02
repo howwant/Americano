@@ -10,16 +10,14 @@ import Logo_img from "@/assets/img/Logo.png";
 
 function Layout() {
   const [menuOpen, setMenuOpen] = useState(false);
-  const [expandedMenus, setExpandedMenus] = useState([]);
+  const [expandedMenu, setExpandedMenu] = useState(null); // 하나만 열 수 있도록 변경
   const navigate = useNavigate();
 
   const toggleMenu = (menu) => {
-    setExpandedMenus((prev) =>
-      prev.includes(menu) ? prev.filter((m) => m !== menu) : [...prev, menu]
-    );
+    setExpandedMenu((prev) => (prev === menu ? null : menu));
   };
 
-  const isExpanded = (menu) => expandedMenus.includes(menu);
+  const isExpanded = (menu) => expandedMenu === menu;
 
   return (
     <div className="layout">
