@@ -17,7 +17,7 @@ import CPIT from "@/assets/img/TestResult/CPIT.jpg";
 import CPIS from "@/assets/img/TestResult/CUIS.jpg";
 
 import { Button } from "primereact/button";
-import { AiOutlineHome } from "react-icons/ai";
+import { AiOutlineDownload, AiOutlineHome } from "react-icons/ai";
 import { AiOutlineReload } from "react-icons/ai";
 
 const DietTestResult = () => {
@@ -57,6 +57,19 @@ const DietTestResult = () => {
         <Button severity="info" rounded onClick={() => navigate("/")}>
           <AiOutlineHome />
           홈으로 이동
+        </Button>
+        <Button
+          severity="info"
+          icon={<AiOutlineDownload />}
+          rounded
+          onClick={() => {
+            const link = document.createElement("a");
+            link.href = imgFnc(id);
+            link.download = `${id}.jpg`;
+            link.click();
+          }}
+        >
+          이미지 다운받기
         </Button>
       </div>
     </div>

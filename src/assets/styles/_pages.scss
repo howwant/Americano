@@ -218,9 +218,16 @@
     justify-content: space-around;
     display: flex;
     gap: 10px;
+    @media (max-width: 768px) {
+      flex-wrap: wrap;
+      gap: 5px;
+    }
     button {
       display: flex;
       gap: 5px;
+      @media (max-width: 768px) {
+        font-size: 12px;
+      }
     }
   }
 }
