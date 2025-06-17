@@ -34,6 +34,14 @@ const Home = () => {
             style={{ cursor: "pointer" }}
           />
         </SwiperSlide>
+        <SwiperSlide>
+          <img
+            src={mainBanners[2]}
+            alt="메인 배너3"
+            onClick={() => navigate("/about/whyWeMadeIt")}
+            style={{ cursor: "pointer" }}
+          />
+        </SwiperSlide>
       </Swiper>
       <h3 className="sub-title">17가지 식단, 한눈에 보기</h3>
       {/* 작은 배너 슬라이드 */}

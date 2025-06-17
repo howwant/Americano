@@ -1,6 +1,7 @@
 // main 배너
 import banner1 from "./banner1.jpeg";
 import banner2 from "./banner2.jpeg";
+import banner3 from "./banner3.jpeg";
 
 // small 배너
 import s_banner1 from "./small_banner/small_banner_01.PNG";
@@ -86,7 +87,7 @@ import p_banner2 from "./PopBanner/p_banner_02.jpg";
 import p_banner3 from "./PopBanner/p_banner_03.jpg";
 import p_banner4 from "./PopBanner/p_banner_04.jpg";
 
-export const mainBanners = [banner1, banner2];
+export const mainBanners = [banner1, banner2, banner3];
 
 export const s_img = [
   { src: s_banner1, pop: [a_banner1, a_banner2, a_banner3, a_banner4] },
